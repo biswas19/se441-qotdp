@@ -1,6 +1,0 @@
-2016-04-30 16:59:20 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Table "QUOTE_PIPEE" not found; SQL statement:
-select count(*) as y0_ from quote_pipee this_ [42102-191]
-2016-04-30 17:11:58 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Table "QUOTE_PIPEE" not found; SQL statement:
-select count(*) as y0_ from quote_pipee this_ [42102-191]
