@@ -6,4 +6,6 @@ node {
   bat "${gradleHome}\\bin\\gradle.bat assemble uploadArchives"
   
   step([$class: 'ArtifactArchiver', artifacts: '**/*.war',fingerprint: true])
+  step([$class: 'test'])
+  step([$class: 'sonqarqube'])
 } 
