@@ -8,5 +8,6 @@ node {
  // step([$class: 'ArtifactArchiver', artifacts: '**/*.war',fingerprint: true, test: '**/*.xml'])
  
 step([$class: 'ArtifactArchiver', artifacts: '**/*.war',fingerprint: true, test: '**/*.xml','sonqarqube': '**/*.xml'])
+step([$class: 'test': '**/*.xml']) //,'sonqarqube': '**/*.xml'
   
 } 
