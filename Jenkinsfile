@@ -5,7 +5,7 @@ node {
   def gradleHome = 'C:\\gradle-2.12' //tool 'Gradle 2.12'
   bat "${gradleHome}\\bin\\gradle.bat assemble uploadArchives"
   
-  step([$class: 'ArtifactArchiver', artifacts: '**/*.war',fingerprint: true])
-  step([$class: 'testResults' ,'**/TEST-*.xml'])
+  step([$class: 'ArtifactArchiver', artifacts: '**/*.war',fingerprint: true, test: '**/*.xml'])
+  //step([$class: 'testResults' ,'**/TEST-*.xml'])
   
 } 
